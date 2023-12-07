@@ -124,14 +124,20 @@ form.addEventListener("submit", (e) => {
     cvv.nextElementSibling.classList.remove("error");
   }
 
-  if (
+   if (
     name.classList == "name success" &&
     card.classList == "card success" &&
     cvv.classList == "cvv success"
   ) {
+    const cardData = new FormData(form);
+    const cardName = cardData.get("name");
+    console.log(cardName);
     form.classList.add("hidden");
 
     bye.classList.remove("hidden");
+    document.querySelector(
+      ".bye"
+    ).innerText = `Thanks ${cardName}! Your order is on the way!`;
     name.value = "";
     card.value = "";
     cvv.value = "";
