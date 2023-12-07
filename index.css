@@ -1,0 +1,205 @@
+:root {
+  --primary-green: #16db99;
+  --gray: #8b8b8b;
+  --green-text: #065f46;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Smythe", serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  position: relative;
+}
+.text-container {
+  margin: 0 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*Header Section*/
+
+.header {
+  background-image: url("./images/ferks-guare-KEZdWfYD-ow-unsplash.jpg");
+  height: 170px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 65%;
+  color: #fff;
+  padding: 45px 25px;
+}
+header h1 {
+  font-size: 39px;
+  letter-spacing: 0.05em;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 22px;
+  line-height: 14px;
+  margin: 0;
+}
+
+/*Main Section*/
+
+.items-container {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #dedede;
+}
+
+.item-text-container {
+  margin-left: 10px;
+}
+
+.add-btn {
+  margin-left: auto;
+  font-size: 32px;
+  border: 1px solid #dedede;
+  padding: 2px 10px;
+  border-radius: 50%;
+  color: #dedede;
+  background-color: transparent;
+}
+
+.emoji {
+  user-select: none;
+}
+.item-name {
+  font-size: 28px;
+  margin: 0;
+}
+.item-ingredients {
+  color: var(--gray);
+  font-size: 16px;
+}
+.full-price {
+  font-size: 20px;
+  margin: 0;
+}
+
+/*Order Section*/
+.order-section h2 {
+  font-size: 28px;
+  text-align: center;
+  margin: 30px;
+}
+.order-item {
+  list-style: none;
+  display: flex;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+.order {
+  margin-left: auto;
+}
+.clear-btn {
+  border: none;
+  margin-left: 10px;
+  background-color: transparent;
+  color: #bbb;
+  cursor: pointer;
+}
+
+.total {
+  padding: 5px 0;
+  border-top: 1px solid #000;
+  font-size: 28px;
+  display: flex;
+}
+
+.order-btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  background-color: var(--primary-green);
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  font-weight: bold;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+/*Payment Section*/
+form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: fixed;
+  max-width: 520px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  margin: auto;
+  padding: 20px 25px;
+  height: 400px;
+  box-shadow: 1px 1px 10px #000;
+}
+
+form h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form input {
+  border: 2px solid #757575;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form .error {
+  border-color: #e74c3c;
+  visibility: visible;
+}
+form .success {
+  border-color: #2ecc71;
+}
+
+form small {
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+#pay-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 0;
+  color: white;
+  font-weight: bold;
+  background-color: var(--primary-green);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.bye-section {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #ecfdf5;
+  color: #065f46;
+  padding: 15px;
+  font-size: 32px;
+}
